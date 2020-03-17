@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Cupcakes</title>
+</head>
+<body>
+    <h1>List of Cupcakes</h1>
+    <ul id="cupcake-list">
+    </ul>
+    <h2>Create a Cupcake!</h2>
+    <form id="create">
+        <div class="form-group">
+            <label for="flavor">Flavor</label>
+            <input class="form-control" type="text", id="flavor", name="flavor">
+        </div>
+        <div class="form-group">
+            <label for="size">Size</label>
+            <input class="form-control" type="text", id="size", name="size">
+        </div>
+        <div class="form-group"></div>
+            <label for="rating">Rating</label>
+            <input class="form-control" type="text", id="rating", name="rating">
+        </div>
+        <div class="form-group">
+            <label for="image">Image URL</label>
+            <input class="form-control" type="text", id="image", name="image">
+        </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <h3>Find Cupcakes</h3>
+    <form id="filter">
+        <div class="form-group">
+            <label for="flavor">Search for a type of cupcake</label>
+            <input class="form-control" type="text", id="search", name="search">
+        </div>
+        </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</body>
+<script src="https://unpkg.com/jquery"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="https://unpkg.com/lodash"></script>
+<script src="/static/cupcake.js"></script>
+</html>
